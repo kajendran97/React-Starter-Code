@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    
+        <title>Hello React!</title>
+    
+        <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+      </head>
+
+      <body>
+        <div id="root"></div>
+    
+        <script type="text/babel">
+          // React code will go here
+          class App extends React.Component {
+              render() {
+                  return <h1> Hello kajendran </h1> 
+                  // nside the return, we're going to put what looks like a simple HTML element. 
+                  // Note that we're not returning a string here, so don't use quotes around the element. 
+                  // This is called JSX, and we'll learn more about it soon.
+              }
+          }
+          ReactDOM.render(<App />, document.getElementById('root'))
+          // Finally, we're going to use the React DOM render() method to render 
+          //the App class we created into the root div in our HTML.
+
+        </script>
+      </body>
+</html>
